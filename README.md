@@ -1,2 +1,2 @@
 # win32
-Microsfot Win32 playground and examples
+Microsoft Win32 playground and examples
