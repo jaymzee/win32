@@ -116,8 +116,7 @@ void Scene::CalculateLayout()
         m_ellipse.point.y - m_ellipse.radiusY
         );
 
-    for (DWORD i = 0; i < 12; i++)
-    {
+    for (DWORD i = 0; i < 12; i++) {
         D2D1::Matrix3x2F mat = D2D1::Matrix3x2F::Rotation(
             (360.0f / 12) * i, m_ellipse.point);
 
@@ -171,10 +170,8 @@ INT WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR, INT nCmdShow)
 
     // Run the message loop.
     MSG msg{};
-    while (msg.message != WM_QUIT)
-    {
-        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
-        {
+    while (msg.message != WM_QUIT) {
+        if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
             TranslateMessage(&msg);
             DispatchMessage(&msg);
             continue;
